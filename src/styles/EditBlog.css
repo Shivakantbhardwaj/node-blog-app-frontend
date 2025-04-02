@@ -1,0 +1,66 @@
+/* Center the edit form */
+.edit-blog-container {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* Heading Styling */
+.edit-blog-container h2 {
+  font-size: 26px;
+  margin-bottom: 20px;
+  color: #2c3e50;
+}
+
+/* Input & Textarea Styling */
+.edit-blog-container input,
+.edit-blog-container textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+.edit-blog-container input:focus,
+.edit-blog-container textarea:focus {
+  border-color: #3498db;
+  outline: none;
+}
+
+/* File Input */
+.edit-blog-container input[type="file"] {
+  border: none;
+  padding: 5px;
+  background: #f0f0f0;
+}
+
+/* Submit Button */
+.edit-blog-container button {
+  width: 100%;
+  padding: 12px;
+  background: #3498db;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.edit-blog-container button:hover {
+  background: #2980b9;
+}
+
+/* Error Message */
+.edit-blog-container p {
+  color: red;
+  font-size: 14px;
+  margin-top: 10px;
+}

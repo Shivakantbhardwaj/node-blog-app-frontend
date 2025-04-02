@@ -1,0 +1,62 @@
+/* Header Styling */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background-color: #f8f9fa; /* Light color */
+    color: #333;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* "Blogs" Heading on the Left */
+  .header h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0;
+    color: #007bff; /* Blue color */
+  }
+  
+  /* Profile Container */
+  .profile-container {
+    position: relative;
+    cursor: pointer;
+  }
+  
+  /* Profile Image */
+  .profile-image {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    object-fit: cover;
+    border: 2px solid #ddd;
+  }
+  
+  /* Dropdown Menu */
+  .dropdown-menu {
+    position: absolute;
+    top: 50px;
+    right: 0;
+    background: white;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Logout Button */
+  .dropdown-menu button {
+    border: none;
+    background: none;
+    color: black;
+    cursor: pointer;
+    font-size: 14px;
+    width: 100%;
+    padding: 5px;
+    text-align: left;
+  }
+  
+  .dropdown-menu button:hover {
+    background: #f0f0f0;
+  }
+  
