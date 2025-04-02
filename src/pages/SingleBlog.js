@@ -17,7 +17,7 @@ const SingleBlog = () => {
     return (
         <div>
             <h2>{blog.title}</h2>
-            {blog.image && <img src={`http://localhost:5000/uploads/${blog.image}`} alt={blog.title} width="300" />}
+            {blog.image && <img src={`${process.env.REACT_APP_API_URL}/uploads/${blog.image}`} alt={blog.title} width="300" />}
             <p>{blog.description}</p>
             <CommentSection blogId={id} />
         </div>

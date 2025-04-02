@@ -69,7 +69,7 @@ const ViewBlog = () => {
           <h2>{blog.title}</h2>
           <p>{blog.description}</p>
           {blog.image && (
-            <img src={`http://localhost:5000/uploads/${blog.image}`} alt={blog.title} />
+            <img src={`${process.env.REACT_APP_API_URL}/uploads/${blog.image}`} alt={blog.title} />
           )}
           <button className="back-btn" onClick={() => navigate("/blogs")}>
             Back to Blogs

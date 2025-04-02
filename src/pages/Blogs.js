@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import Header from "../components/Header";
 import "../styles/Blogs.css";
+const cors = require("cors");
 
 const Blogs = () => {
   const [blogs, setBlogs] = useState([]);
@@ -24,7 +25,7 @@ const Blogs = () => {
 
   const handleDelete = async (id) => {
     try {
-      const response = await fetch(`http://localhost:5000/api/blogs/${id}`, {
+      const response = await fetch(`${process.env.REACT_APP_API_URL}/api/blogs/${id}`, {
         method: "DELETE",
       });
       if (response.ok) {

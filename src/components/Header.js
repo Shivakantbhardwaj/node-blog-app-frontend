@@ -27,7 +27,7 @@ const Header = () => {
       {user && (
         <div className="profile-container">
         <img
-  src={user.profileImage ? `http://localhost:5000/uploads/${user.profileImage}` : "/default-avatar.png"}
+  src={user.profileImage ? `${process.env.REACT_APP_API_URL}/uploads/${user.profileImage}` : "/default-avatar.png"}
   alt="Profile"
   className="profile-image"
   onClick={() => setDropdownOpen(!dropdownOpen)}

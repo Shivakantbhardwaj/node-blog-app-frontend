@@ -7,7 +7,7 @@ const CommentSection = ({ blogId }) => {
     const [commentText, setCommentText] = useState("");
 
     useEffect(() => {
-        fetch(`http://localhost:5000/api/blogs/${blogId}`)
+        fetch(`${process.env.REACT_APP_API_URL}/api/blogs/${blogId}`)
             .then(res => res.json())
             .then(data => setComments(data.comments));
     }, [blogId]);
